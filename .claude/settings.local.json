@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:blog.daynhauhoc.com)",
+      "WebFetch(domain:topdev.vn)"
+    ]
+  }
+}
