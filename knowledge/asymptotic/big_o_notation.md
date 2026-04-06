@@ -132,7 +132,7 @@ def binary_search(arr, target):
     return -1
 ```
 
-**Ví dụ thực tế:** Tìm kiếm nhị phân, cây nhị phân tìm kiếm (BST).
+**Ví dụ thực tế:** Tìm kiếm nhị phân, cây nhị phân tìm kiếm (Binary Search Trees).
 
 > 1 tỷ phần tử chỉ cần ~30 bước!
 

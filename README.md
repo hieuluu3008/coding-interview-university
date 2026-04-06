@@ -581,8 +581,8 @@ Nhưng đừng quên làm bài toán coding từ phần trên trong khi học!
 - [X] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [X] [Big O Notations (hướng dẫn nhanh tổng quát) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [X] [Big O Notation (và Omega và Theta) - giải thích toán học tốt nhất (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
-- [ ] [Skiena (video)](https://www.youtube.com/watch?v=z1mkCe3kVUA)
-- [ ] [UC Berkeley Big O (video)](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
+- [X] [Skiena (video)](https://www.youtube.com/watch?v=z1mkCe3kVUA)
+- [X] [UC Berkeley Big O (video)](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
 - [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] TopCoder (bao gồm quan hệ truy hồi và định lý master):
   - [Computational Complexity: Phần 1](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one)
