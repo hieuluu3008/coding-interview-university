@@ -583,7 +583,7 @@ Nhưng đừng quên làm bài toán coding từ phần trên trong khi học!
 - [X] [Big O Notation (và Omega và Theta) - giải thích toán học tốt nhất (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [X] [Skiena (video)](https://www.youtube.com/watch?v=z1mkCe3kVUA)
 - [X] [UC Berkeley Big O (video)](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
-- [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
+- [X] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] TopCoder (bao gồm recurrence relations và master theorem):
   - [Computational Complexity: Part 1](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one)
   - [Computational Complexity: Part 2](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20two)

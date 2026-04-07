@@ -189,4 +189,4 @@ $$
 ## Nguồn
 
 - **CSE 373 Analysis of Algorithms, Lecture 2, Fall 2020** – Prof. Skiena
-  NotebookLM: *Thuật toán và Độ phức tạp: Bài toán Xếp lịch và Knapsack*
+  https://www.youtube.com/watch?v=z1mkCe3kVUA
