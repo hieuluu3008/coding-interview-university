@@ -136,6 +136,36 @@ def binary_search(arr, target):
 
 > 1 tỷ phần tử chỉ cần ~30 bước!
 
+##### Tại sao Binary Search là O(log n)?
+
+Bắt đầu với `n` phần tử, mỗi bước chia đôi:
+
+```
+Bước 1: n   → n/2
+Bước 2: n/2 → n/4
+Bước 3: n/4 → n/8
+...
+Bước k: n/2^k = 1  →  k = log₂n
+```
+
+Ví dụ với n = 16: cần đúng **4 bước** = log₂(16).
+
+##### Tại sao viết O(log n) mà không ghi cơ số?
+
+log₂n và log₁₀n chỉ khác nhau một **hằng số**:
+
+$$
+\log_2 n = \frac{\log_{10} n}{\log_{10} 2} \approx 3.32 \times \log_{10} n
+$$
+
+Trong Big-O, hằng số bị bỏ qua, nên:
+
+$$
+O(\log_2 n) = O(\log_{10} n) = O(\log n)
+$$
+
+> Cơ số không quan trọng trong Big-O — chỉ cần viết `O(log n)`.
+
 ---
 
 ### O(n) — Tuyến Tính (Linear)
@@ -170,6 +200,52 @@ def merge_sort(arr):
 ```
 
 **Ví dụ thực tế:** Merge Sort, Heap Sort, Quick Sort (trung bình).
+
+##### Tại sao sorting dựa trên so sánh không thể nhanh hơn O(n log n)?
+
+**Bước 1: Sắp xếp = tìm đúng 1 thứ tự trong N! khả năng**
+
+Mảng N phần tử có N! hoán vị có thể xảy ra. Thuật toán phải xác định đúng 1 cái.
+
+**Bước 2: Cách duy nhất để thu hẹp là so sánh**
+
+Mỗi lần so sánh `a < b?` cho kết quả Yes hoặc No — chỉ có **2 nhánh**.
+
+**Bước 3: Mỗi lần so sánh loại được tối đa một nửa**
+
+Vì chỉ có 2 nhánh, tốt nhất là chia đều — mỗi nhánh nhận một nửa số khả năng. Không thể làm tốt hơn.
+
+**Bước 4: Cần bao nhiêu lần so sánh?**
+
+```
+Sau 1 lần: còn tối đa N!/2  khả năng
+Sau 2 lần: còn tối đa N!/4  khả năng
+Sau k lần: còn tối đa N!/2^k khả năng
+
+Dừng khi còn 1 khả năng:
+N! / 2^k = 1  →  k = log₂(N!)
+```
+
+**Bước 5: log₂(N!) xấp xỉ N log N**
+
+```
+N=4  → N!=24   → log₂(24)  ≈ 4.6  → N logN ≈ 8
+N=8  → N!=40320 → log₂(40320) ≈ 15 → N logN ≈ 24
+```
+
+Không bằng nhau chính xác, nhưng cùng bậc tăng trưởng → O(N log N).
+
+> Dù viết thuật toán kiểu gì, nếu dùng so sánh thì bắt buộc phải so sánh ít nhất N log N lần — vì có N! khả năng cần phân biệt và mỗi lần chỉ loại được tối đa một nửa.
+
+**Tại sao Radix Sort, Counting Sort lại nhanh hơn?**
+
+Vì chúng không dựa trên so sánh — khai thác cấu trúc của dữ liệu (chữ số, phạm vi giá trị) nên thoát khỏi giới hạn này:
+
+| Thuật toán          | Cơ chế               | Độ phức tạp        |
+| --------------------- | ---------------------- | ---------------------- |
+| Merge/Heap/Quick Sort | So sánh               | O(N log N) — tối ưu |
+| Counting Sort         | Đếm tần suất       | O(N + k)               |
+| Radix Sort            | Xử lý từng chữ số | O(N · d)              |
 
 ---
 
